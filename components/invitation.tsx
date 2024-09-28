@@ -17,7 +17,7 @@ export function Invitation() {
         <h1
           className="text-4xl md:text-5xl py-2 text-white text-center mt-6 bg-black w-full"
         >
-          Enrique's Hallows Eve
+          Enrique&apos;s Hallows Eve
         </h1>
 
         <motion.div
