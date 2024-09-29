@@ -1,7 +1,5 @@
 'use client'
 import Image from 'next/image'
-import black_star from '../app/img/black star.svg'
-import white_star from '../app/img/white star.svg'
 import { motion } from "framer-motion"
 
 export function Invitation() {
@@ -12,7 +10,6 @@ export function Invitation() {
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.5 }}
         className="relative w-full max-w-2xl aspect-[1/1.4] bg-white border-8 border-black my-auto flex flex-col justify-between rounded-lg"
-        style={{ fontFamily: "'Vinque', serif" }}
       >
         <h1
           className="text-4xl md:text-5xl py-2 text-white text-center mt-6 bg-black w-full"
@@ -54,7 +51,9 @@ export function Invitation() {
             className="w-1/2 pr-4"
           >
             <Image
-              src={black_star}
+              src="/img/black star.svg"
+              width={500}
+              height={500}
               alt="The Star Tarot Card"
               className="w-full h-auto object-cover"
             />
@@ -72,7 +71,9 @@ export function Invitation() {
             className="w-1/2 pl-4"
           >
             <Image
-              src={white_star}
+              src='/img/white star.svg'
+              width={500}
+              height={500}
               alt="The Moon Tarot Card"
               className="w-full h-auto object-cover"
             />

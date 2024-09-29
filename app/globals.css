@@ -2,9 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  font-family: Vinque, Helvetica, sans-serif;
-}
 
 @layer utilities {
   .text-balance { 

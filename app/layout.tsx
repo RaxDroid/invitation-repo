@@ -1,17 +1,9 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
+import localFont from '@next/font/local'
 import "./globals.css";
 
-const geistSans = localFont({
-  src: "./fonts/vinque.otf",
-  variable: "--font-vinque-sans",
-  weight: "100 300 500 600 700 900",
-});
-const geistMono = localFont({
-  src: "./fonts/vinque.otf",
-  variable: "--font-vinque",
-  weight: "100 300 500 600 700 900",
-});
+const Vinque = localFont({ src: './vinque.otf' })
+
 
 export const metadata: Metadata = {
   title: "Invitation to a wizard's party",
@@ -26,7 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={Vinque.className + ` antialiased`}
       >
         {children}
       </body>
