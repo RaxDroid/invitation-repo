@@ -2,7 +2,8 @@
 const isProd = process.env.NODE_ENV === 'production';
 
 const nextConfig = {
-  basePath: isProd ? '/invitation-repo/' : ''
+    reactStrictMode: true,
+    assetPrefix: isProd ? 'https://raxdroid.github.io/invitation-repo/' : '',
 };
 
 export default nextConfig;
