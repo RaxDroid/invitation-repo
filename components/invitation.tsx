@@ -128,7 +128,7 @@ export function Invitation() {
             <p className="md:text-3xl text-2xl mt-4"><span className='visible md:hidden'>~ </span>Bring your Own Bottle ~ Costume Party</p>
             <hr className="my-3 mx-14 border-2 border-black rounded-2xl opacity-80"></hr>
             <p className="text-xl md:text-2xl">October 12th, 2024 • 8 PM</p>
-            <a className="text-xl md:text-2xl underline text-slate-800" href="https://maps.app.goo.gl/Qsx4T7AhbDmdv5iu8">Ave. Belice, C7 Villas de Cuesta Hermosa</a>
+            <a className="text-xl md:text-2xl underline text-slate-800" href="https://www.google.com/maps?q=18.5131602,-69.9383322&entry=gps&lucs=,94242478,94224825,94227247,94227248,47071704,47069508,94218641,94203019,47084304,94208458,94208447&g_ep=CAISDTYuMTM0LjIuODYzNzAYACCenQoqYyw5NDI0MjQ3OCw5NDIyNDgyNSw5NDIyNzI0Nyw5NDIyNzI0OCw0NzA3MTcwNCw0NzA2OTUwOCw5NDIxODY0MSw5NDIwMzAxOSw0NzA4NDMwNCw5NDIwODQ1OCw5NDIwODQ0N0ICRE8%3D&g_st=com.google.maps.preview.copy&g_st=com.google.maps.preview.copy">Ave. Belice, C7 Villas de Cuesta Hermosa</a>
         </div>
         <h1 className="text-3xl md:text-5xl font-bold text-white text-center mt-6 pt-2 pb-4 bg-black w-full z-10">Raul&apos;s Hallows Eve</h1>
         <div className="text-center justify-center items-center bg-white z-10">
