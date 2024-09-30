@@ -4,23 +4,38 @@ import { motion } from "framer-motion"
 
 export function Invitation() {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-white p-4">
-      <audio preload='true' autoPlay loop src='/invitation-repo/audio/belos.mp3' />
+    <div className="min-h-screen flex items-center justify-center bg-white md:p-4">
+      <iframe src="https://olafwempe.com/mp3/silence/silence.mp3" typeof='audio/mp3' allow="autoplay" id="audio" className="hidden"></iframe>
+      <audio autoPlay loop src='/invitation-repo/audio/belos.mp3' />
       <motion.div
         initial={{ opacity: 0, scale: 0.9 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.5 }}
         id="frame"
-        className="relative w-full max-w-2xl aspect-[1/1.4] bg-white border-8 border-black my-auto flex flex-col justify-between rounded-lg overflow-hidden"
+        className="relative w-full md:max-w-2xl bg-white border-8 border-black flex flex-col justify-between rounded-lg overflow-hidden"
       >
         <div className="relative flex justify-center items-center mt-6 w-full">
-          <div className="absolute w-64 h-64 bg-white border-4 border-black rounded-full z-0">
+          <div className="md:block hidden absolute w-64 h-64 bg-white border-4 border-black rounded-full z-0">
           {[...Array(12)].map((_, i) => (
             <div
               key={i}
               className="absolute w-1 h-[450px] bg-black rounded-full -z-10"
               style={{
                 transform: `rotate(${i * 30}deg) translate(0, -400px)`,
+                transformOrigin: "center center",
+                top: "-45%",
+                left: "50%",
+              }}
+            />
+          ))}
+          </div>
+          <div className="md:hidden block absolute w-32 h-32 bg-white border-4 border-black rounded-full z-0">
+          {[...Array(12)].map((_, i) => (
+            <div
+              key={i}
+              className="absolute w-1 h-[200px] bg-black rounded-full -z-10"
+              style={{
+                transform: `rotate(${i * 30}deg) translate(0, -200px)`,
                 transformOrigin: "center center",
                 top: "-45%",
                 left: "50%",
@@ -74,17 +89,17 @@ export function Invitation() {
           </motion.div>
         </div>
       <div className="w-full bg-white text-center justify-center items-center z-10">
-          <p className="text-3xl mt-4">Bring your Own Bottle ~ Costume Party</p>
+          <p className="md:text-3xl text-2xl mt-4"><span className='visible md:hidden'>~ </span>Bring your Own Bottle ~ Costume Party</p>
           <hr className="my-3 mx-14 border-2 border-black rounded-2xl opacity-80"></hr>
-          <p className="text-2xl">October 12th, 2024 • 8 PM</p>
-          <a className="text-2xl underline text-slate-800" href="https://maps.app.goo.gl/Qsx4T7AhbDsMv5iu8">Ave. Belice, C7 Villas de Cuesta Hermosa</a>
+          <p className="text-xl md:text-2xl">October 12th, 2024 • 8 PM</p>
+          <a className="text-xl md:text-2xl underline text-slate-800" href="https://maps.app.goo.gl/Qsx4T7AhbDmdv5iu8">Ave. Belice, C7 Villas de Cuesta Hermosa</a>
       </div>
       <h1
-          className="text-4xl md:text-5xl font-bold text-white text-center mt-6 pt-2 pb-4 bg-black w-full"
+          className="text-3xl md:text-5xl font-bold text-white text-center mt-6 pt-2 pb-4 bg-black w-full z-10"
         >
           Raul&apos;s Hallows Eve
         </h1>
-      <div className="text-center justify-center items-center">
+      <div className="text-center justify-center items-center bg-white z-10">
         <motion.p initial="hidden" animate="visible" className="text-lg mt-4 italic mb-10">Burn this card after reading</motion.p>
       </div>
       </motion.div>
