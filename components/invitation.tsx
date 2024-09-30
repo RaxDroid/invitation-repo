@@ -1,14 +1,11 @@
 'use client'
 import Image from 'next/image'
 import { motion } from "framer-motion"
-import black_star from '../public/img/black star.svg'
-import white_star from '../public/img/white star.svg'
 
 export function Invitation() {
-  const belos = new Audio('/audio/belos.mp3')
   return (
     <div className="min-h-screen flex items-center justify-center bg-white p-4">
-      <audio preload='true' autoPlay loop src={belos.src} />
+      <audio preload='true' autoPlay loop src='/invitation-repo/audio/belos.mp3' />
       <motion.div
         initial={{ opacity: 0, scale: 0.9 }}
         animate={{ opacity: 1, scale: 1 }}
@@ -48,7 +45,7 @@ export function Invitation() {
             className="w-1/2 pr-4"
           >
             <Image
-              src={black_star}
+              src='/invitation-repo/img/black star.svg'
               width={500}
               height={500}
               alt="The Star Tarot Card"
@@ -68,7 +65,7 @@ export function Invitation() {
             className="w-1/2 pl-4"
           >
             <Image
-              src={white_star}
+              src='/invitation-repo/img/white star.svg'
               width={500}
               height={500}
               alt="The Moon Tarot Card"
