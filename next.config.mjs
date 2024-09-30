@@ -2,8 +2,7 @@
 const isProd = process.env.NODE_ENV === 'production';
 
 const nextConfig = {
-  output: 'export',
-  basePath: isProd ? '/invitation-repo' : ''
+  basePath: isProd ? '/invitation-repo/' : ''
 };
 
 export default nextConfig;
