@@ -5,9 +5,10 @@ import black_star from '../public/img/black star.svg'
 import white_star from '../public/img/white star.svg'
 
 export function Invitation() {
+  const belos = new Audio('/audio/belos.mp3')
   return (
     <div className="min-h-screen flex items-center justify-center bg-white p-4">
-      <audio preload='true' autoPlay loop src="/audio/belos.mp3" />
+      <audio preload='true' autoPlay loop src={belos.src} />
       <motion.div
         initial={{ opacity: 0, scale: 0.9 }}
         animate={{ opacity: 1, scale: 1 }}
