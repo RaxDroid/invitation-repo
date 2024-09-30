@@ -7,6 +7,7 @@ import white_star from '../public/img/white star.svg'
 export function Invitation() {
   return (
     <div className="min-h-screen flex items-center justify-center bg-white p-4">
+      <audio  autoPlay loop src="/audio/belos.mp3" />
       <motion.div
         initial={{ opacity: 0, scale: 0.9 }}
         animate={{ opacity: 1, scale: 1 }}
@@ -75,9 +76,10 @@ export function Invitation() {
           </motion.div>
         </div>
       <div className="w-full bg-white text-center justify-center items-center z-10">
-          <p className="text-xl md:text-xl mt-4">Bring your Own Bottle ~ Costume Party</p>
-          <p className="text-lg md:text-xl">October 12th, 2024 • 8 PM</p>
-          <p className="text-lg md:text-xl">Ave. Belice, C7 Villas de Cuesta Hermosa</p>
+          <p className="text-3xl mt-4">Bring your Own Bottle ~ Costume Party</p>
+          <hr className="my-3 mx-14 border-2 border-black rounded-2xl opacity-80"></hr>
+          <p className="text-2xl">October 12th, 2024 • 8 PM</p>
+          <a className="text-2xl underline text-slate-800" href="https://maps.app.goo.gl/Qsx4T7AhbDsMv5iu8">Ave. Belice, C7 Villas de Cuesta Hermosa</a>
       </div>
       <h1
           className="text-4xl md:text-5xl font-bold text-white text-center mt-6 pt-2 pb-4 bg-black w-full"
